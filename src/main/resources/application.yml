@@ -138,3 +138,4 @@ grpc:
 elasticsearch:
   host: localhost
   port: 9300
+
