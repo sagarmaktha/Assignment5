@@ -23,7 +23,7 @@ spring:
 server:
   port: 8080
   servlet:
-    contextPath: /newsletter
+    contextPath: /newspaper
 
 bizdirect:
   app-version: 1.0.0-SNAPSHOT
@@ -32,7 +32,7 @@ bizdirect:
   data:
     schema: db
     username: ${MYSQL_DB_USERNAME:root}
-    password: ${MYSQL_DB_PASSWORD:sgrmspa123}
+    password: ${MYSQL_DB_PASSWORD:123456789}
     datasource-driver-class-name: com.mysql.jdbc.Driver
     master-datasource:
       host: ${MASTER_DATASOURCE_HOST:localhost:3306}

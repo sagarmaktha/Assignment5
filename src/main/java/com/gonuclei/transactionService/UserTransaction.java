@@ -1,7 +1,5 @@
 package com.gonuclei.transactionService;
 
-import com.bizdirect.data.annotations.MasterRepository;
-import com.bizdirect.data.annotations.SlaveRepository;
 import com.gonuclei.mapper.UserMapper;
 import com.gonuclei.models.bo.UserBo;
 import com.gonuclei.models.entities.UserEntity;
@@ -22,15 +20,15 @@ public class UserTransaction {
   @Autowired
   UserMapper userMapper;
 
-  public boolean signupTransaction(UserBo userBo) {/*
+  public boolean signupTransaction(UserBo userBo) {
     UserEntity userEntity = userMapper.userBoToUserEntity(userBo);
-    if (!slaveUserRepository.existsByEmailId(userEntity.getMail())) {
+    if (!slaveUserRepository.existsBymail(userEntity.getMail())) {
       masterUserRepository.save(userEntity);
       return true;
     } else {
       return false;
     }
- */ return true; }
+   }
 
   }
 

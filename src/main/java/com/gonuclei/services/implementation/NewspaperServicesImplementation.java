@@ -5,7 +5,9 @@ import com.gonuclei.models.bo.NewspaperBo;
 import com.gonuclei.services.NewspaperServices;
 import com.gonuclei.transactionService.NewspaperTransaction;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class NewspaperServicesImplementation implements NewspaperServices {
 
 

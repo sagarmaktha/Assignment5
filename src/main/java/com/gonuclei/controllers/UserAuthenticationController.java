@@ -11,7 +11,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 @RequestMapping("/users")
 public class UserAuthenticationController {
   @Autowired
@@ -33,6 +35,7 @@ public class UserAuthenticationController {
 
   @PostMapping(path = "/signup")
   private ResponseEntity<?> signup(@RequestBody SignUpRequest user) throws Exception{
+    //return "hello";
     return ResponseEntity.ok(userServices.signup(userMapper.userRequestToUserBo(user)));
 
   }

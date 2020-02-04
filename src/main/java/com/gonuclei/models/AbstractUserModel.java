@@ -7,7 +7,11 @@ import javax.validation.constraints.NotBlank;
 
 @MappedSuperclass
 public abstract class AbstractUserModel {
-    @Id
+  public String getPassword() {
+    return password;
+  }
+
+  @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

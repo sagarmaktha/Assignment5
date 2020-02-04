@@ -25,8 +25,10 @@ public class NewsLetter extends SpringBootServletInitializer {
    * @param builder {@link SpringApplicationBuilder}
    * @return {@link SpringApplicationBuilder}
    */
-  @Override
+  /*@Override
   protected SpringApplicationBuilder configure(final SpringApplicationBuilder builder) {
     return builder.sources(NewsLetter.class);
   }
+
+   */
 }
